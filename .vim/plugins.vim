@@ -1,18 +1,14 @@
-call plug#begin('~/.config/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 " syntax
 Plug 'sheerun/vim-polyglot'
-Plug 'HerringtonDarkholme/yats.vim'
 Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'flowtype/vim-flow'
+Plug 'maxmellon/vim-jsx-pretty'  
 
 " status bar
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
-"Plug 'vim-airline/vim-airline'
-Plug 'ryanoasis/vim-devicons'
-"Plug 'vim-airline/vim-airline-themes'
+
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
@@ -22,7 +18,6 @@ Plug 'scrooloose/nerdtree'
 
 " typing
 Plug 'alvan/vim-closetag'
-Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
 " tmux
@@ -31,14 +26,13 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " autocomplete
 Plug 'sirver/ultisnips'
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " test
 Plug 'tyewang/vimux-jest-test'
 Plug 'janko-m/vim-test'
 
 " IDE
-Plug 'xabikos/vscode-react' "snippet ReactJS
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
@@ -47,7 +41,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
 " git
 Plug 'tpope/vim-fugitive'
 

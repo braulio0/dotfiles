@@ -2,10 +2,10 @@
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
 " Lightlane
 let g:lightline = {
- \ 'active': {
-  \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
-   \   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo'], ['gitbranch']]
-    \ },
+      \ 'active': {
+      \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
+      \   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo'], ['gitbranch']]
+      \ },
       \ 'inactive': {
       \   'left': [['inactive'], ['relativepath']],
       \   'right': [['bufnum']]
@@ -18,20 +18,14 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head',
       \   'kitestatus': 'kite#statusline'
       \ },
-      \ 'colorscheme': 'oceanicnext',
+      \ 'colorscheme': 'gruvbox',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''
       \ }
-     \}
-"let g:loaded_lightline_powerful = 1
-let g:lightline_powerline_fonts=1
-"airline
-"let g:airline#extensions#tabline#enabled = 1
+      \}
 
-"let g:airline#extensions#tabline#formatter = 'unique_tail'
-"let g:airline_powerline_fonts = 1
-"nerdtree
+"  nerdtree
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 let NERDTreeAutoDeleteBuffer=1
@@ -39,22 +33,23 @@ let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeMapOpenInTab='\t'
-let g:gruvbox_contrast_light = "soft"
-
-let g:javascript_plugin_flow = 1
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsSnippetDirectories=[$HOME.'~/.vim/UltiSnips']
+let g:UltiSnipsSnippetDirectories=[$HOME.'/configs/.vim/UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>" 
+let g:UltiSnipsListSnippets="<C-_>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
 " kite
-let g:kite_supported_languages = ['javascript', 'python']
+"let g:kite_supported_languages = ['*']
+let g:coc_global_extensions = [
+      \ 'coc-tsserver'
+      \ ]
+" tmux navigator
+let g:tmux_navigator_no_mappings = 1
 
 " coc
-autocmd FileType python let b:coc_suggest_disable = 1
-autocmd FileType javascript let b:coc_suggest_disable = 1
 autocmd FileType scss setl iskeyword+=@-@
 
 " vim fugitive
@@ -134,5 +129,4 @@ let $FZF_DEFAULT_OPTS='--layout=reverse'
     "" has been found.
     "return search_result
 "endfunction
-
 
