@@ -41,6 +41,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+
 
 " git
 Plug 'tpope/vim-fugitive'

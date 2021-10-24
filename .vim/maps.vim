@@ -60,7 +60,7 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 nnoremap <Leader>k :m .-2<CR>==
 nnoremap <Leader>j :m .+1<CR>==
-
+nnoremap <Leader>e :Prettier<CR>
 " faster scrolling
 nnoremap <C-j> 10<C-e>
 nnoremap <C-k> 10<C-y>

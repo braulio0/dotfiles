@@ -35,14 +35,14 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeMapOpenInTab='\t'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsSnippetDirectories=[$HOME.'/configs/.vim/UltiSnips']
+let g:UltiSnipsSnippetDirectories=[$HOME.'~/.vim/UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<C-_>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
 " kite
-"let g:kite_supported_languages = ['*']
+let g:kite_supported_languages = ['javascript', 'python']
 let g:coc_global_extensions = [
       \ 'coc-tsserver'
       \ ]
